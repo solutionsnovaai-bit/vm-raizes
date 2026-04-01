@@ -30,7 +30,7 @@ module.exports = async function handler(req, res) {
     await transporter.sendMail({
       from: `"Portal Raízes VM" <${EMAIL_FROM}>`,
       to: EMAIL_TO,
-      subject: `📋 Prestação de Contas — ${timestamp}`,
+      subject: `📋 Comunicado Raízes Vila Matilde — ${timestamp}`,
       html: `
         <div style="font-family:Arial,sans-serif;max-width:500px;">
           <div style="background:#0D2D3A;padding:24px;text-align:center;">
@@ -40,7 +40,7 @@ module.exports = async function handler(req, res) {
             <p style="color:#7AADAD;font-size:11px;letter-spacing:3px;margin:4px 0 0;">VILA MATILDE · STUDIOS</p>
           </div>
           <div style="padding:24px;background:#f8fafa;border:1px solid #e0e8e8;">
-            <p style="color:#0D2D3A;font-size:15px;margin:0 0 12px;">Nova prestação de contas recebida pelo portal.</p>
+            <p style="color:#0D2D3A;font-size:15px;margin:0 0 12px;">Novo documento recebido pelo portal.</p>
             <p style="color:#444;font-size:13px;margin:0 0 6px;"><strong>Arquivo:</strong> ${fileName}</p>
             <p style="color:#444;font-size:13px;margin:0;"><strong>Recebido em:</strong> ${timestamp}</p>
           </div>

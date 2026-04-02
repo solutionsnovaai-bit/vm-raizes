@@ -30,7 +30,7 @@ module.exports = async function handler(req, res) {
     await transporter.sendMail({
       from: `"Portal Raízes VM" <${EMAIL_FROM}>`,
       to: EMAIL_TO,
-      subject: `📋 Prestação de Contas — ${timestamp}`,
+      subject: `📋 Portal Raízes Vila Matilde — ${timestamp}`,
       html: `
         <div style="font-family:Arial,sans-serif;max-width:500px;">
           <div style="background:#0D2D3A;padding:24px;text-align:center;">
